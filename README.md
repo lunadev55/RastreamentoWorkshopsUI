@@ -1,27 +1,22 @@
 # RastreamentoWorkshopsUi
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.1.
+![rastreamento-workshops-ui-print](https://github.com/user-attachments/assets/90573569-82ff-41a6-8fd1-14ef270a1ee2)
 
-## Development server
+Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 18.2.1.
+Tenha certeza de ter a versão correta do Angular instalada.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Passos para Rodar o App.
 
-## Code scaffolding
+1. **Clone o repositório**:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+   Primeiro, clone o repositório da aplicação:
 
-## Build
+   ```bash
+   git clone https://github.com/lunadev55/RastreamentoWorkshopsWebUi.git
+   cd RastreamentoWorkshopsWebUi
+   git checkout master (o código está na branch master)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+2. **Rodar o App**:
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+   Execute `npm install` (para instalar as dependencias).
+   Execute `ng serve` para um servidor de desenvolvimento. Navegue até `http://localhost:4200/`. O aplicativo será recarregado automaticamente se você alterar qualquer um dos arquivos de origem.
