@@ -1,0 +1,22 @@
+<div class="container">
+<h2>Atas dos Workshops</h2>
+<hr />
+<div class="filters mb-3 d-flex">
+  <input type="text" [(ngModel)]="colaboradorFilter" placeholder="Colaborador" (input)="filtrarAtas()" class="form-control ms-2" />
+  <input type="text" [(ngModel)]="workshopFilter" placeholder="Workshop" (input)="filtrarAtas()" class="form-control ms-2" />
+  <input type="date" [(ngModel)]="dataFilter" (change)="filtrarAtas()" class="form-control ms-2" />
+</div>
+<button (click)="goToCharts()" class="btn btn-primary mt-4">Ver Gráficos</button>
+<div *ngFor="let ata of filteredAtas" class="card mb-3">
+  <div class="card-body">
+    <a (click)="viewWorkshopDetails(ata.workshop.id)" class="card-title">{{ ata.workshop.nome }}</a>
+    <p class="card-text">{{ ata.workshop.descricao }}</p>
+    <p class="card-text"><strong>Data:</strong> {{ ata.workshop.dataRealizacao | date }}</p>
+    <p class="card-text"><strong>Colaboradores:</strong></p>
+    <ul>
+      <li *ngFor="let colaborador of ata.workshop.colaboradores">{{ colaborador.nome }}</li>
+    </ul>
+  </div>
+</div>
+</div>
+  
